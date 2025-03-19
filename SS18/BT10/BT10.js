@@ -32,7 +32,7 @@ if (n >= 0 && n <= 999) {
     if (hangChuc > 0 && hangDonVi === 5) {
         ketQua += "Lam";
     } else if (hangChuc === 0 && hangDonVi > 0 && hangTram > 0) {
-        ketQua += "Le " + soDict[hangDonVi];
+        ketQua += "Linh " + soDict[hangDonVi];
     } else if (hangDonVi > 0) {
         ketQua += soDict[hangDonVi];
     }
