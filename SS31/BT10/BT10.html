@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân viên Rikkei</title>
+    <link rel="stylesheet" href="BT10.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách nhân viên Rikkei</h1>
+        
+        <div class="form-container">
+            <div class="input-group-container">
+                <div class="input-group">
+                    <label for="employee-name">Tên nhân viên</label>
+                    <input type="text" id="employee-name" placeholder="Nhập tên nhân viên">
+                </div>
+                
+                <div class="input-group">
+                    <label for="employee-position">Chức vụ</label>
+                    <input type="text" id="employee-position" placeholder="Nhập chức vụ">
+                </div>
+            </div>
+            
+            <button id="add-employee-btn">Thêm nhân viên</button>
+        </div>
+        
+        <div class="table-container">
+            <table id="employee-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên</th>
+                        <th>Chức vụ</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list">
+                    <!-- Danh sách nhân viên sẽ được thêm vào đây bởi JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Phân trang sẽ được thêm vào đây bởi JavaScript -->
+        </div>
+    </div>
+    
+    <script src="BT10.js"></script>
+</body>
+</html>
