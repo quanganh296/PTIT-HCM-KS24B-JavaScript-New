@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh sách nhân viên Rikkei</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
     <link rel="stylesheet" href="BT1.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Register</h1>
-    <form id="registerForm" class="register-form" onsubmit="event.preventDefault(); register();">
-        <p>Email:</p><input type="email" id="email" placeholder="Email" /><br>
-        <p>Password:</p><input type="password" id="password" placeholder="Password" /><br>
-        <p>Comfirm Password:</p><input type="password" id="confirmPassword" placeholder="Confirm Password" /><br>
-        <button type="submit">Register</button>
-        <div id="message"></div>
-      </form>
-    </div>
-    
-    
+    <div class="password-container">
+        <input type="password" id="password" placeholder="Enter your password" />
+        <button id="togglePassword" type="button" title="Toggle Password Visibility">
+          <i id="eyeIcon" class="fa-solid fa-eye"></i>
+        </button>
+      </div>
     <script src="BT1.js"></script>
 </body>
 </html>
