@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng dụng Thời tiết</title>
+
+    <link rel="stylesheet" href="BT6.css" />
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Ứng dụng Thời tiết</h1>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Nhập tên thành phố..."
+          aria-label="Tên thành phố"
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+
+      <div id="errorMessage" class="error-message">
+        Thành phố không tồn tại trong cơ sở dữ liệu!
+      </div>
+
+      <div id="weatherCard" class="weather-card">
+        <div id="cityName" class="city-name"></div>
+        <div class="weather-info">
+          <div id="weatherIcon" class="weather-icon"></div>
+          <div id="temperature" class="temperature"></div>
+          <div class="details">
+            <div id="description"></div>
+            <div id="humidity"></div>
+            <div id="windSpeed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="BT6.js"></script>
+  </body>
+</html>

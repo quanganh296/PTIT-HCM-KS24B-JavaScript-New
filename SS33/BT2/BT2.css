@@ -1,0 +1,11 @@
+textarea {
+    width: 30%;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  button {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+  }
