@@ -1,0 +1,87 @@
+#product-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    width: 220px;
+    height: 320px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card img {
+    object-fit: contain;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .card-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+  }
+  
+  .card-price {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-text {
+    font-size: 11px;
+    color: #555;
+    margin: 0;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  
+  .btn {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  
+  .search-container {
+    margin-bottom: 15px;
+  }
+  
