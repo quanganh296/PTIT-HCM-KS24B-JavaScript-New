@@ -4,16 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const pendingTasks = document.getElementById("pendingTasks");
   const inProgressTasks = document.getElementById("inProgressTasks");
   const doneTasks = document.getElementById("doneTasks");
-
-  // Retrieve tasks from localStorage
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
-  // Save tasks to localStorage
   const saveTasksToLocalStorage = () => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   };
-
-  // Render tasks to the board
   const renderTasks = () => {
     pendingTasks.innerHTML = "";
     inProgressTasks.innerHTML = "";
@@ -42,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   };
-
-  // Add a new task
   addTaskButton.addEventListener("click", () => {
     const taskName = taskInput.value.trim();
     if (!taskName) {
@@ -56,14 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTasks();
     taskInput.value = "";
   });
-
-  // Change task status
   window.changeStatus = (index, newStatus) => {
     tasks[index].status = newStatus;
     saveTasksToLocalStorage();
     renderTasks();
   };
-
-  // Render tasks on page load
   renderTasks();
 });
